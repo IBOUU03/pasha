@@ -1,0 +1,54 @@
+#mobile-sec{
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    background-image: url(../../assets/image/mobile-image.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size: contain;
+    padding: 82px 0 40px;
+    margin-top: 96px;
+    h3{
+        font-family: 'Gothic A1';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        color: rgba(0, 0, 0, 0.87);
+        width: 515.95px;
+    }
+    p{
+        font-family: 'Gothic A1';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        color: rgba(0, 0, 0, 0.6);
+        margin-top: 30px;
+        width: 451.7px;
+    }
+    .store-get{
+        margin-top: 53px;
+        img{
+            cursor: pointer;
+        }
+        .store-img{
+            width: 141px;
+            img{
+                height: 41px;
+                width: 141px;
+                margin-bottom: 7px;
+            }
+        }
+        .qr-img{
+            img{
+                width: 93px;
+                height: 93px;
+                margin-left: 12px;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,30 @@
+#business-card-slide{
+    display: flex;
+    justify-content: center;
+    background-image: url(.././image/business-cards-page.png);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 108px;
+    padding-bottom: 221px;
+    h3{
+        width: 658.43px;
+        font-family: 'Gothic A1';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 56px;
+        color: rgba(0, 0, 0, 0.87);
+    }
+    p{
+        margin-top: 32px;
+        width: 535.09px;
+        font-family: 'Gothic A1';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+}

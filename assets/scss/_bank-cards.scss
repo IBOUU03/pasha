@@ -1,0 +1,103 @@
+#bank-cards{   
+    display: flex;
+    justify-content: center;
+    margin-top: 96px;
+    
+    .card-items{
+        margin-top: 32px;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.07);
+        border-radius: 8px;
+        padding: 40px 12px 40px 32px;
+        .card-img{
+            img{
+                width: 317.33px;
+                height: 200.75px;
+            }
+        }
+        .card-item{
+            margin-left: 56px;
+            h3{
+                font-family: 'Gothic A1';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 48px;
+                letter-spacing: 0.25px;
+                color: rgba(0, 0, 0, 0.87);
+            }
+            p{
+                width: 718.43px;
+                font-family: 'Gothic A1';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 24px;
+                letter-spacing: 0.15px;
+                color: rgba(0, 0, 0, 0.6);
+            }
+            .card-about{
+                margin-top: 37px;
+                width: 790px;
+                .card-about-item{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 0px 25.7375px 0px 0px;
+                    width: 196.57px;
+                    h3{
+                        display: inline;
+                        font-family: 'Gothic A1';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 24px;
+                        letter-spacing: 0.1px;
+                        color: rgba(0, 0, 0, 0.6);
+                    }
+                    p{  
+                        display: inline;  
+                        font-family: 'Gothic A1';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 15px;
+                        line-height: 24px;
+                        letter-spacing: 0.15px;
+                        color: rgba(0, 0, 0, 0.87);
+                    }
+                }
+            }
+        }
+        .card-item-btn{
+            margin-top: 24px;
+            margin-left: 375.33px;
+            button{
+                background: #058D66;
+                border-radius: 6px;
+                padding: 12px 34.8438px 12px 33.1562px;
+                border: none;
+                font-family: 'Gothic A1';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.1px;
+                color: #FFFFFF;
+                cursor: pointer;
+            }
+            p{
+                margin-top: 13px;
+                padding: auto;
+                margin-left: 51px;
+                cursor: pointer;
+                font-family: 'Gothic A1';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.1px;
+                color: #099A71;
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+#online-slide{
+    background: #F1F9F7;
+    padding: 0 0 52px 12px;
+    display: flex;
+    justify-content: center;
+    .container{
+        padding: 104px 0 52px 12px;
+        background-position: right -40px bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(../image/one-clock.png);
+        h3{
+            font-family: 'Gothic A1';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 56px;
+            color: rgba(0, 0, 0, 0.87);
+        }
+    }
+    p{
+        margin-top: 32px;
+        font-family: 'Gothic A1';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+    ul{
+        margin-top: 45px;
+        li{
+            margin-top: 24px;
+            font-family: 'Gothic A1';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.15px;
+            color: rgba(0, 0, 0, 0.87);
+        }
+    }
+    button{
+        border: none;
+        cursor: pointer;
+        margin-top: 72px;
+        padding: 16px 33.08px 16px 33.92px;
+        background: #058D66;
+        border-radius: 6px;
+        font-family: 'Gothic A1';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: #FFFFFF;
+    }
+}

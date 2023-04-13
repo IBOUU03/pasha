@@ -1,0 +1,134 @@
+#tariff-selection{
+    display: flex;
+    justify-content: center;
+    margin-top: 96px;
+    padding-top: 8px;
+    padding-bottom: 24px;
+    
+    h1{
+        width: 676.81px;
+        font-family: 'Gothic A1';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 48px;
+        letter-spacing: 0.25px;
+        color: rgba(0, 0, 0, 0.87);
+    }
+    .tariff-selection-items{
+        padding: 12px 24px 0px 0px;
+        margin-top: 48px;
+        justify-content: space-between;
+        .tariff-item{
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            padding: 28px 24px 24px 24px;
+            width: 368px;
+            h5{
+                font-family: 'Gothic A1';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 32px;
+                color: rgba(0, 0, 0, 0.87);
+            }
+            img{
+                margin-top: 28px;
+                width: 320px;
+                height: 166px;
+            }
+            .item-price{
+                height: 72px;
+                align-items: end;
+                p{
+                    font-family: 'Gothic A1';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 24px;
+                    letter-spacing: 0.5px;
+                    color: rgba(0, 0, 0, 0.38);
+                    margin-bottom: 10xp;
+                }
+                .price{
+                    font-family: 'Gothic A1';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 60px;
+                    line-height: 72px;
+                    letter-spacing: -0.5px;
+                    color: rgba(0, 0, 0, 0.87);
+                    margin-top: 0
+                }
+                img{
+                    width: 17px;
+                    height: 18px;
+                }
+            }
+            p{
+                font-family: 'Gothic A1';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.1px;
+                color: rgba(0, 0, 0, 0.87);
+            }
+            ul{
+                margin-bottom: 40px;
+            }
+            li{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                
+                img{
+                    width: 20px;
+                    height: 20px;
+                    margin-bottom: 13px;
+                }
+                p{
+                    margin-left: 8px;
+                    margin-top: 16px;
+                    font-family: 'Gothic A1';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: 0.25px;
+                    color: rgba(0, 0, 0, 0.6);
+                    span{
+                        color: #099A71;
+                    }
+                }
+            }
+            a{
+                margin-top: 40px;
+                font-family: 'Gothic A1';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 24px;
+                text-align: center;
+                letter-spacing: 0.1px;
+                color: #099A71;
+                padding: 8px 119.703px 8px 122.297px;
+            }
+            button{
+                padding: 8px 129px 8px 128.297px;
+                background: #058D66;
+                border-radius: 6px;
+                font-family: 'Gothic A1';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 24px;  
+                letter-spacing: 0.1px;
+                color: #FFFFFF;
+                margin-top: 8px;
+                cursor: pointer;
+            }
+        }
+    }
+    
+}

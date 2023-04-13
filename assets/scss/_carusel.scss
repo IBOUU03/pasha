@@ -1,0 +1,88 @@
+#carusel{    
+    z-index: 0;
+    position: relative;
+    overflow: hidden;
+    #back{
+        z-index: 5;
+        position: absolute;
+        left: 25px;
+        top:50%;
+        cursor: pointer;
+    }
+    #next{
+        z-index: 5;
+        position: absolute;
+        top: 50%;
+        right: 25px;
+        cursor: pointer;
+    }
+
+    #slider{
+        display: flex;
+        width: fit-content;
+        position: relative;
+        transition: 1s ease-in-out;
+        left: 0px;
+        .slide-item {
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            padding: 80px 0 52px;
+            &:first-of-type {
+                background-image: url(../image/slide1.png);
+                background-color: rgb(224, 243, 237);
+                }
+            
+            &:nth-last-of-type(1) {
+                background-image: url(../image/slide4.png);
+                background-color: rgb(231, 244, 249);
+            }
+            
+            &:nth-last-of-type(2) {
+                background-image: url(../image/slide3.png);
+                background-color: rgb(253, 246, 231);
+            }
+            
+            &:nth-last-of-type(3) {
+                background-image: url(../image/slide2.png);
+                background-color: rgb(255, 235, 240);
+            }
+            background-position: 100% 0;
+            background-repeat: no-repeat;
+            background-size: contain;
+            h3{
+                font-family: 'Gothic A1';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 48px;
+                line-height: 56px;
+                color: rgba(0, 0, 0, 0.87);            
+            }
+            p{
+                margin-top: 32px;
+                font-family: 'Gothic A1';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 24px;
+                letter-spacing: 0.5px;
+                color: rgba(0, 0, 0, 0.6);
+                margin-bottom: 45px;
+            }
+            a{
+                padding: 12px 30.2656px 12px 30.7344px;
+                background: #058D66;
+                border-radius: 6px;
+                font-family: 'Gothic A1';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.1px;
+                color: #FFFFFF;
+                border: none;
+                cursor: pointer;                
+            }
+        }
+    }
+}

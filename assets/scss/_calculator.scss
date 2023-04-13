@@ -1,0 +1,97 @@
+#calculator{
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    padding-top: 56px;
+    padding-bottom: 64px;
+    background: #FFFFFF;
+    box-shadow: 2px 5px 7px rgba(0, 0, 0, 0.07);    
+    h3{
+        font-family: 'Gothic A1';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 48px;
+        letter-spacing: 0.25px;
+        color: rgba(0, 0, 0, 0.87);
+    }
+    
+    .range-slider{
+        margin-top: 40px;
+        width: 466px;
+        height: 104.25px;
+        .range-slider-text{
+            width: 466px;
+            background: #FFFFFF;
+            border: 1px solid #D6D7D6;
+            border-radius: 6px;
+            p{
+                margin: 10px;
+                font-family: 'Gothic A1';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 12px;
+                color: rgba(0, 0, 0, 0.6);                
+            }
+            .cal-number{
+                display: flex;
+                justify-content: space-between;
+                width: 428px;
+                label{
+                    margin-left: 20px;
+                    margin-bottom: 10px;
+                    font-family: 'Gothic A1';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 17px;
+                    color: #000000;  
+                    margin-top: 0;                 
+                }     
+                h6{
+                    font-family: 'Gothic A1';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 14px;
+                    color: rgba(0, 0, 0, 0.87);  
+                }       
+            }
+        }
+        .range-slider__input{
+            position: relative;
+            left: 10px;
+            top: -15px;
+            overflow: hidden;
+            background: transparent;
+            -webkit-appearance: none;
+            height: 26px;
+            z-index: 1;
+            width: calc(100% - 36px);
+            outline: none;
+        }
+    }
+    .range-slider-calcu{
+        margin-top: 40px;
+        h5{
+            font-family: 'Gothic A1';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.25px;
+            color: rgba(0, 0, 0, 0.6);
+        }
+        p{
+            margin-top: 6px;
+            font-family: 'Gothic A1';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 48px;
+            letter-spacing: 0.25px;
+            color: rgba(0, 0, 0, 0.87);            
+        }
+    }
+}

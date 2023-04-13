@@ -1,0 +1,41 @@
+#advantages{
+    display: flex;
+    justify-content: center;
+    padding-left: 24px;
+    margin-top: 56px;
+    h3{
+        font-family: 'Gothic A1';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 48px;
+        letter-spacing: 0.25px;
+        color: rgba(0, 0, 0, 0.87);
+    }
+    .advan-items{
+        margin-top: 56px;
+        .text{
+            width: 80%;
+            margin-left: 24px;
+        }
+        h4{
+            font-family: 'Gothic A1';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.15px;
+            color: rgba(0, 0, 0, 0.87);
+        }
+        p{
+            margin-top: 8px;
+            font-family: 'Gothic A1';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 24px;
+            letter-spacing: 0.5px;
+            color: rgba(0, 0, 0, 0.6)
+        }
+    }
+}

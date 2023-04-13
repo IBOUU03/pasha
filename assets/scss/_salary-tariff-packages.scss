@@ -1,0 +1,82 @@
+#salary-tariff-packages{
+    display: flex;
+    justify-content: center;
+    margin-top: 96px;
+    padding: 24px;
+    h3{
+        font-family: 'Gothic A1';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 48px;
+        letter-spacing: 0.25px;
+    }
+    p{
+        margin-top: 28px;
+        font-family: 'Gothic A1';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+    }
+    .tariff-packages-items{
+        justify-content: space-between;
+        margin-top: 44px;
+        .tariff-packages-item{
+            background: #FFFFFF;
+            box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.07);
+            border-radius: 8px;
+            .tariff-pack-item-head{
+                img{
+                    margin-left: 130px;
+                    display: inline;
+                }
+                h4{
+                    font-family: 'Gothic A1';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 24px;
+                    text-align: center;
+                    letter-spacing: 0.15px;
+                    color: rgba(0, 0, 0, 0.87);
+                }
+                p{
+                    font-family: 'Gothic A1';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    text-align: center;
+                    color: rgba(0, 0, 0, 0.6);
+                }
+            }
+            .packages-item-salary{
+                margin-top: 24px;
+                padding: 0 24px;
+                justify-content: space-between;
+                align-items: start;
+                h5{
+                    margin: auto 0;
+                    font-family: 'Gothic A1';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 24px;
+                    letter-spacing: 0.15px;
+                    color: #343836;
+                }
+                p{
+                    margin-top: 0;
+                    font-family: 'Gothic A1';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 32px;
+                    line-height: 48px;
+                    color: #099A71;
+                }
+            }
+        }
+    }
+}

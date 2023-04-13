@@ -1,0 +1,25 @@
+#tariff-packages{
+    margin-top: 96px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 24px;
+    h3{
+        font-family: 'Gothic A1';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 48px;
+        letter-spacing: 0.25px;
+        color: rgba(0, 0, 0, 0.87);
+    }
+    p{
+        margin-top: 28px;
+        font-family: 'Gothic A1';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+}

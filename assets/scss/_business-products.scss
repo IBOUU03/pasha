@@ -1,0 +1,150 @@
+#business-products{
+    padding-top: 8px;
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: center;
+    margin-top: 104px;
+    h1{width: 530px;
+        font-family: 'Gothic A1';
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 48px;
+        letter-spacing: 0.25px;
+        font-style: normal;
+    }
+    .div-2{
+        a{
+            padding: 24px 24px 16px;
+            border-radius: 8px;
+            padding: 24px 24px 16px;
+            box-shadow: 0 2px 7px rgba(0,0,0,.07);
+            background: #FFFFFF;
+            box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.07);
+            border-radius: 8px;
+            margin-right: 24px;
+            height: 296px;
+            background-repeat: no-repeat;
+            background-position: 100%;
+            &:hover{
+                box-shadow: 0 6px 10px rgba(0,0,0,.07), 0 0 10px rgba(0,0,0,.03);;
+            }
+            h5{
+                font-family: 'Gothic A1';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 32px;
+                width: 184px;
+                color: rgba(0, 0, 0, 0.87);
+            }
+            p{
+                font-family: 'Gothic A1';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 24px;
+                letter-spacing: 0.5px;
+                color: rgba(0, 0, 0, 0.6);
+                width: 232.26px;
+            }
+            h3{
+                margin-top: 36px;
+                font-family: 'Gothic A1';
+                font-weight: 600;
+                font-style: normal;
+                line-height: 24px;
+                font-size: 14px;
+                align-items: center;
+                display: flex;
+                color: #099A71;
+                letter-spacing: 0.1px;
+            }
+            &:first-of-type{
+                background-image: url(../../assets/image/pos-terminal.png);
+                background-color: #e7f4f9;
+                p{
+                    margin-top: 28px;
+                }
+                h3{
+                    margin-top: 69px;
+                }
+            }
+            &:nth-of-type(2){
+                background-color: #ffebf0;
+                background-image: url(../../assets/image/business-cards.png);
+                p{
+                    margin-top: 32px
+                }
+                h3{
+                    margin-top: 101px;
+                }
+            }
+        }
+    }
+    .div-3{
+        a{
+            padding: 24px 24px 16px;
+            border-radius: 8px;
+            padding: 24px 24px 16px;
+            box-shadow: 0 2px 7px rgba(0,0,0,.07);
+            background: #FFFFFF;
+            box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.07);
+            border-radius: 8px;
+            margin-right: 24px;
+            height: 240px;
+            background-repeat: no-repeat;
+            background-position: 100%;
+            &:hover{
+                box-shadow: 0 6px 10px rgba(0,0,0,.07), 0 0 10px rgba(0,0,0,.03);
+            }
+            
+            h5{
+                font-family: 'Gothic A1';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 32px;
+                width: 184px;
+                color: rgba(0, 0, 0, 0.87);
+            }
+            h3{
+                margin-top: 37px;
+                font-family: 'Gothic A1';
+                font-weight: 600;
+                font-style: normal;
+                line-height: 24px;
+                font-size: 14px;
+                align-items: center;
+                display: flex;
+                color: #099A71;
+                letter-spacing: 0.1px;
+            }
+            p{
+                font-family: 'Gothic A1';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 24px;
+                letter-spacing: 0.5px;
+                color: rgba(0, 0, 0, 0.6);
+                width: 232.26px;
+                margin-top: 32px;
+            }
+            &:first-of-type{
+                background-color: #fdf6e7;
+                background-image: url(../../assets/image/factoring.png);
+                h3{
+                    margin-top: 5px;
+                }
+            }
+            &:nth-of-type(2){
+                background-color: #e0f3ed;
+                background-image: url(../../assets/image/e-commerce.png);
+            }
+            &:nth-of-type(3){
+                background-color: #f4f5f4;
+                background-image: url(../../assets/image/bank-guarantee.png);
+            }
+        }
+    }    
+}

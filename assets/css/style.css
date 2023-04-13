@@ -1,0 +1,1670 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  background: #FAFAFA;
+}
+
+.container {
+  width: 60%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.con-4 {
+  width: 31%;
+}
+
+.con-2 {
+  width: 47.8%;
+}
+
+.margin-t {
+  margin-top: 40px;
+}
+
+.margin-t24 {
+  margin-top: 24px;
+}
+
+header {
+  background-color: white;
+  position: sticky;
+  z-index: 2;
+}
+header #nav-bar {
+  background-color: white;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border-top: 1px solid #edefed;
+  border-bottom: 1px solid #edefed;
+  padding: 0 40px;
+}
+header .logo img {
+  width: 86px;
+  height: 40px;
+}
+header .nav {
+  margin-left: 56px;
+}
+header .nav li {
+  padding: 24px 16px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: rgba(0, 0, 0, 0.38);
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+}
+header .nav li:hover {
+  background: #f1f9f7 radial-gradient(circle, transparent 1%, #f1f9f7 0) 50%/18000%;
+  color: rgba(0, 0, 0, 0.87);
+  border-bottom: 3px solid #058d66;
+}
+header .online-btn button {
+  background: #058d66;
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  font-weight: 600;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  padding: 8px 16px;
+  height: 40px;
+  width: 128px;
+  cursor: pointer;
+  margin-left: 890px;
+}
+header .tab-section {
+  z-index: 99;
+  width: 100%;
+  height: 300px;
+  display: none;
+  top: 75px;
+  position: absolute;
+  background-color: white;
+}
+header .tab-section .business-list {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3803921569);
+  margin-left: 210px;
+}
+header .tab-section .business-list ul {
+  margin-right: 290px;
+}
+header .tab-section .business-list li {
+  padding: 16px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+}
+header .tab-section .business-list li a {
+  color: rgba(0, 0, 0, 0.3803921569);
+}
+header .tab-section .business-list li a:hover {
+  color: black;
+}
+
+#carusel {
+  z-index: 0;
+  position: relative;
+  overflow: hidden;
+}
+#carusel #back {
+  z-index: 5;
+  position: absolute;
+  left: 25px;
+  top: 50%;
+  cursor: pointer;
+}
+#carusel #next {
+  z-index: 5;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  cursor: pointer;
+}
+#carusel #slider {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  transition: 1s ease-in-out;
+  left: 0px;
+}
+#carusel #slider .slide-item {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding: 80px 0 52px;
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#carusel #slider .slide-item:first-of-type {
+  background-image: url(../image/slide1.png);
+  background-color: rgb(224, 243, 237);
+}
+#carusel #slider .slide-item:nth-last-of-type(1) {
+  background-image: url(../image/slide4.png);
+  background-color: rgb(231, 244, 249);
+}
+#carusel #slider .slide-item:nth-last-of-type(2) {
+  background-image: url(../image/slide3.png);
+  background-color: rgb(253, 246, 231);
+}
+#carusel #slider .slide-item:nth-last-of-type(3) {
+  background-image: url(../image/slide2.png);
+  background-color: rgb(255, 235, 240);
+}
+#carusel #slider .slide-item h3 {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  color: rgba(0, 0, 0, 0.87);
+}
+#carusel #slider .slide-item p {
+  margin-top: 32px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 45px;
+}
+#carusel #slider .slide-item a {
+  padding: 12px 30.2656px 12px 30.7344px;
+  background: #058D66;
+  border-radius: 6px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+
+#business-optimal-solution {
+  margin-top: 24px;
+  padding-top: 8px;
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: center;
+}
+#business-optimal-solution h1 {
+  width: 530px;
+  font-family: "Gothic A1";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0.25px;
+  font-style: normal;
+}
+#business-optimal-solution a {
+  padding: 24px 24px 16px;
+  border-radius: 8px;
+  padding: 24px 24px 16px;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.07);
+  background: #FFFFFF;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.07);
+  border-radius: 8px;
+  margin-right: 24px;
+  height: 296px;
+}
+#business-optimal-solution a:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.07), 0 0 10px rgba(0, 0, 0, 0.03);
+}
+#business-optimal-solution a h4 {
+  margin-top: 24px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.87);
+}
+#business-optimal-solution a li {
+  margin-top: 16px;
+  gap: 8px;
+}
+#business-optimal-solution a p {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: rgba(0, 0, 0, 0.6);
+  width: 243px;
+}
+#business-optimal-solution a h3 {
+  margin-top: 36px;
+  font-family: "Gothic A1";
+  font-weight: 600;
+  font-style: normal;
+  line-height: 24px;
+  font-size: 14px;
+  align-items: center;
+  display: flex;
+  color: #099A71;
+  letter-spacing: 0.1px;
+}
+
+#business-products {
+  padding-top: 8px;
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  margin-top: 104px;
+}
+#business-products h1 {
+  width: 530px;
+  font-family: "Gothic A1";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0.25px;
+  font-style: normal;
+}
+#business-products .div-2 a {
+  padding: 24px 24px 16px;
+  border-radius: 8px;
+  padding: 24px 24px 16px;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.07);
+  background: #FFFFFF;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.07);
+  border-radius: 8px;
+  margin-right: 24px;
+  height: 296px;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+#business-products .div-2 a:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.07), 0 0 10px rgba(0, 0, 0, 0.03);
+}
+#business-products .div-2 a h5 {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  width: 184px;
+  color: rgba(0, 0, 0, 0.87);
+}
+#business-products .div-2 a p {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: rgba(0, 0, 0, 0.6);
+  width: 232.26px;
+}
+#business-products .div-2 a h3 {
+  margin-top: 36px;
+  font-family: "Gothic A1";
+  font-weight: 600;
+  font-style: normal;
+  line-height: 24px;
+  font-size: 14px;
+  align-items: center;
+  display: flex;
+  color: #099A71;
+  letter-spacing: 0.1px;
+}
+#business-products .div-2 a:first-of-type {
+  background-image: url(../../assets/image/pos-terminal.png);
+  background-color: #e7f4f9;
+}
+#business-products .div-2 a:first-of-type p {
+  margin-top: 28px;
+}
+#business-products .div-2 a:first-of-type h3 {
+  margin-top: 69px;
+}
+#business-products .div-2 a:nth-of-type(2) {
+  background-color: #ffebf0;
+  background-image: url(../../assets/image/business-cards.png);
+}
+#business-products .div-2 a:nth-of-type(2) p {
+  margin-top: 32px;
+}
+#business-products .div-2 a:nth-of-type(2) h3 {
+  margin-top: 101px;
+}
+#business-products .div-3 a {
+  padding: 24px 24px 16px;
+  border-radius: 8px;
+  padding: 24px 24px 16px;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.07);
+  background: #FFFFFF;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.07);
+  border-radius: 8px;
+  margin-right: 24px;
+  height: 240px;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+#business-products .div-3 a:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.07), 0 0 10px rgba(0, 0, 0, 0.03);
+}
+#business-products .div-3 a h5 {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  width: 184px;
+  color: rgba(0, 0, 0, 0.87);
+}
+#business-products .div-3 a h3 {
+  margin-top: 37px;
+  font-family: "Gothic A1";
+  font-weight: 600;
+  font-style: normal;
+  line-height: 24px;
+  font-size: 14px;
+  align-items: center;
+  display: flex;
+  color: #099A71;
+  letter-spacing: 0.1px;
+}
+#business-products .div-3 a p {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: rgba(0, 0, 0, 0.6);
+  width: 232.26px;
+  margin-top: 32px;
+}
+#business-products .div-3 a:first-of-type {
+  background-color: #fdf6e7;
+  background-image: url(../../assets/image/factoring.png);
+}
+#business-products .div-3 a:first-of-type h3 {
+  margin-top: 5px;
+}
+#business-products .div-3 a:nth-of-type(2) {
+  background-color: #e0f3ed;
+  background-image: url(../../assets/image/e-commerce.png);
+}
+#business-products .div-3 a:nth-of-type(3) {
+  background-color: #f4f5f4;
+  background-image: url(../../assets/image/bank-guarantee.png);
+}
+
+#innovative-solutions {
+  display: flex;
+  justify-content: center;
+  margin-top: 96px;
+  padding-bottom: 133px;
+  background: url(../../assets/image/online-bank.png);
+  background-size: 739px;
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+}
+#innovative-solutions h1 {
+  width: 623.79px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0.25px;
+  color: rgba(0, 0, 0, 0.87);
+}
+#innovative-solutions .innovative-text {
+  width: 270px;
+  margin-top: 48px;
+}
+#innovative-solutions .innovative-text h1 {
+  margin-top: 24px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: rgba(0, 0, 0, 0.87);
+}
+#innovative-solutions .innovative-text p {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+#tariff-selection {
+  display: flex;
+  justify-content: center;
+  margin-top: 96px;
+  padding-top: 8px;
+  padding-bottom: 24px;
+}
+#tariff-selection h1 {
+  width: 676.81px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0.25px;
+  color: rgba(0, 0, 0, 0.87);
+}
+#tariff-selection .tariff-selection-items {
+  padding: 12px 24px 0px 0px;
+  margin-top: 48px;
+  justify-content: space-between;
+}
+#tariff-selection .tariff-selection-items .tariff-item {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  padding: 28px 24px 24px 24px;
+  width: 368px;
+}
+#tariff-selection .tariff-selection-items .tariff-item h5 {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: rgba(0, 0, 0, 0.87);
+}
+#tariff-selection .tariff-selection-items .tariff-item img {
+  margin-top: 28px;
+  width: 320px;
+  height: 166px;
+}
+#tariff-selection .tariff-selection-items .tariff-item .item-price {
+  height: 72px;
+  align-items: end;
+}
+#tariff-selection .tariff-selection-items .tariff-item .item-price p {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: rgba(0, 0, 0, 0.38);
+  margin-bottom: 10xp;
+}
+#tariff-selection .tariff-selection-items .tariff-item .item-price .price {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 72px;
+  letter-spacing: -0.5px;
+  color: rgba(0, 0, 0, 0.87);
+  margin-top: 0;
+}
+#tariff-selection .tariff-selection-items .tariff-item .item-price img {
+  width: 17px;
+  height: 18px;
+}
+#tariff-selection .tariff-selection-items .tariff-item p {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: rgba(0, 0, 0, 0.87);
+}
+#tariff-selection .tariff-selection-items .tariff-item ul {
+  margin-bottom: 40px;
+}
+#tariff-selection .tariff-selection-items .tariff-item li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#tariff-selection .tariff-selection-items .tariff-item li img {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 13px;
+}
+#tariff-selection .tariff-selection-items .tariff-item li p {
+  margin-left: 8px;
+  margin-top: 16px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: rgba(0, 0, 0, 0.6);
+}
+#tariff-selection .tariff-selection-items .tariff-item li p span {
+  color: #099A71;
+}
+#tariff-selection .tariff-selection-items .tariff-item a {
+  margin-top: 40px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #099A71;
+  padding: 8px 119.703px 8px 122.297px;
+}
+#tariff-selection .tariff-selection-items .tariff-item button {
+  padding: 8px 129px 8px 128.297px;
+  background: #058D66;
+  border-radius: 6px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #FFFFFF;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+#mobile-sec {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  background-image: url(../../assets/image/mobile-image.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: contain;
+  padding: 82px 0 40px;
+  margin-top: 96px;
+}
+#mobile-sec h3 {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.87);
+  width: 515.95px;
+}
+#mobile-sec p {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 30px;
+  width: 451.7px;
+}
+#mobile-sec .store-get {
+  margin-top: 53px;
+}
+#mobile-sec .store-get img {
+  cursor: pointer;
+}
+#mobile-sec .store-get .store-img {
+  width: 141px;
+}
+#mobile-sec .store-get .store-img img {
+  height: 41px;
+  width: 141px;
+  margin-bottom: 7px;
+}
+#mobile-sec .store-get .qr-img img {
+  width: 93px;
+  height: 93px;
+  margin-left: 12px;
+}
+
+#bank-account {
+  display: flex;
+  justify-content: center;
+  background-image: url(../../assets/image/accounts.jpg);
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #FFEBF0;
+  padding: 108px 0 52px;
+}
+#bank-account h3 {
+  width: 447.58px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  color: rgba(0, 0, 0, 0.87);
+}
+#bank-account p {
+  margin-top: 32px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: rgba(0, 0, 0, 0.6);
+}
+#bank-account button {
+  margin-top: 45px;
+  padding: 12px 30.2656px 12px 30.7344px;
+  background: #058D66;
+  border-radius: 6px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+
+#select-account {
+  display: flex;
+  justify-content: center;
+  margin-top: 56px;
+  padding: 8px 24px 24px 24px;
+}
+#select-account h3 {
+  width: 555.42px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0.25px;
+  color: rgba(0, 0, 0, 0.87);
+}
+#select-account p {
+  margin-top: 28px;
+  width: 962.73px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: rgba(0, 0, 0, 0.6);
+}
+#select-account a {
+  margin-right: 24px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.07);
+  border-radius: 8px;
+  padding: 24px 24px 48px 24px;
+}
+#select-account a:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.07), 0 0 10px rgba(0, 0, 0, 0.03);
+}
+#select-account a h4 {
+  width: 231.78px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.87);
+}
+#select-account a h5 {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #099A71;
+}
+
+#advantages {
+  display: flex;
+  justify-content: center;
+  padding-left: 24px;
+  margin-top: 56px;
+}
+#advantages h3 {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0.25px;
+  color: rgba(0, 0, 0, 0.87);
+}
+#advantages .advan-items {
+  margin-top: 56px;
+}
+#advantages .advan-items .text {
+  width: 80%;
+  margin-left: 24px;
+}
+#advantages .advan-items h4 {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.87);
+}
+#advantages .advan-items p {
+  margin-top: 8px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#new-business {
+  margin-top: 96px;
+  display: flex;
+  justify-content: center;
+  background-image: url(../image/kob-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 88px 0;
+}
+#new-business h3 {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  color: #FFFFFF;
+}
+#new-business .new-items {
+  margin-top: 52px;
+  width: 760px;
+}
+#new-business .new-items h4 {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+#new-business .new-items p {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+#new-business button {
+  border: none;
+  margin-top: 48px;
+  padding: 16px 38.2656px 16px 38.7344px;
+  background: #058D66;
+  border-radius: 6px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #FFFFFF;
+}
+
+#tariff-packages {
+  margin-top: 96px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 24px;
+}
+#tariff-packages h3 {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0.25px;
+  color: rgba(0, 0, 0, 0.87);
+}
+#tariff-packages p {
+  margin-top: 28px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#questions {
+  margin-top: 96px;
+  display: flex;
+  justify-content: center;
+  padding: 8px 12px;
+}
+#questions h3 {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0.25px;
+  color: rgba(0, 0, 0, 0.87);
+}
+#questions .accor {
+  margin-top: 48px;
+}
+#questions .accor .accordion {
+  margin-bottom: 16px;
+  padding: 15px 15px 15px 17px;
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #D6D7D6;
+  border-radius: 6px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.87);
+  text-align: start;
+}
+#questions .accor .accordion .btn-click {
+  display: flex;
+  justify-content: space-between;
+}
+#questions .accor .accordion .accor-style {
+  display: none;
+  margin-top: 28px;
+}
+#questions .accor .accordion .accor-style a {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #099A71;
+}
+
+#business-card-slide {
+  display: flex;
+  justify-content: center;
+  background-image: url(.././image/business-cards-page.png);
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 108px;
+  padding-bottom: 221px;
+}
+#business-card-slide h3 {
+  width: 658.43px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  color: rgba(0, 0, 0, 0.87);
+}
+#business-card-slide p {
+  margin-top: 32px;
+  width: 535.09px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#bank-strong {
+  margin-top: 40px;
+  padding: 0 12px;
+  display: flex;
+  justify-content: center;
+}
+#bank-strong h3 {
+  width: 366.51px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0.25px;
+  color: rgba(0, 0, 0, 0.87);
+}
+#bank-strong h4 {
+  margin-top: 26px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.87);
+}
+#bank-strong p {
+  margin-top: 30px;
+  width: 445.62px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.6);
+}
+#bank-strong img {
+  width: 626px;
+  height: 312px;
+}
+
+#bank-cards {
+  display: flex;
+  justify-content: center;
+  margin-top: 96px;
+}
+#bank-cards .card-items {
+  margin-top: 32px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.07);
+  border-radius: 8px;
+  padding: 40px 12px 40px 32px;
+}
+#bank-cards .card-items .card-img img {
+  width: 317.33px;
+  height: 200.75px;
+}
+#bank-cards .card-items .card-item {
+  margin-left: 56px;
+}
+#bank-cards .card-items .card-item h3 {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 48px;
+  letter-spacing: 0.25px;
+  color: rgba(0, 0, 0, 0.87);
+}
+#bank-cards .card-items .card-item p {
+  width: 718.43px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.6);
+}
+#bank-cards .card-items .card-item .card-about {
+  margin-top: 37px;
+  width: 790px;
+}
+#bank-cards .card-items .card-item .card-about .card-about-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 25.7375px 0px 0px;
+  width: 196.57px;
+}
+#bank-cards .card-items .card-item .card-about .card-about-item h3 {
+  display: inline;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: rgba(0, 0, 0, 0.6);
+}
+#bank-cards .card-items .card-item .card-about .card-about-item p {
+  display: inline;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.87);
+}
+#bank-cards .card-items .card-item-btn {
+  margin-top: 24px;
+  margin-left: 375.33px;
+}
+#bank-cards .card-items .card-item-btn button {
+  background: #058D66;
+  border-radius: 6px;
+  padding: 12px 34.8438px 12px 33.1562px;
+  border: none;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+#bank-cards .card-items .card-item-btn p {
+  margin-top: 13px;
+  padding: auto;
+  margin-left: 51px;
+  cursor: pointer;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #099A71;
+}
+
+#card-order {
+  display: flex;
+  justify-content: center;
+  margin-top: 96px;
+}
+#card-order h3 {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0.25px;
+  color: rgba(0, 0, 0, 0.87);
+}
+#card-order .order-items {
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 48px;
+}
+#card-order .order-items .order-item {
+  margin-right: 24px;
+}
+#card-order .order-items .order-item img {
+  border-radius: 32px;
+  background-color: #F1F9F7;
+}
+#card-order .order-items .order-item h4 {
+  margin-top: 26px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.87);
+}
+#card-order .order-items .order-item p {
+  margin-top: 14px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#our-business-cards {
+  display: flex;
+  justify-content: center;
+  margin-top: 96px;
+  background-image: url(../image/for-all-needs.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 88px 0;
+}
+#our-business-cards h3 {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  color: rgba(0, 0, 0, 0.87);
+}
+#our-business-cards .new-items {
+  margin-top: 52px;
+  width: 760px;
+}
+#our-business-cards .new-items h4 {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.87);
+}
+#our-business-cards .new-items p {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: rgba(0, 0, 0, 0.87);
+}
+#our-business-cards button {
+  border: none;
+  margin-top: 48px;
+  padding: 16px 38.2656px 16px 38.7344px;
+  background: #058D66;
+  border-radius: 6px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #FFFFFF;
+}
+
+#salary-card-about {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+#salary-card-about .salary-card-about-item {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.07);
+  border-radius: 8px;
+  padding: 24px;
+  margin-right: 24px;
+}
+#salary-card-about .salary-card-about-item p {
+  margin-top: 28px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: rgba(0, 0, 0, 0.87);
+}
+#salary-card-about .salary-card-about-item:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.07), 0 0 10px rgba(0, 0, 0, 0.03);
+}
+
+#salary-card-advantages {
+  display: flex;
+  justify-content: center;
+  margin-top: 96px;
+}
+#salary-card-advantages h3 {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0.25px;
+  color: rgba(0, 0, 0, 0.87);
+}
+#salary-card-advantages .tab {
+  margin-top: 40px;
+  border-bottom: 1px solid #E2E3E2;
+}
+#salary-card-advantages .tab h4 {
+  cursor: pointer;
+  padding: 8px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #343836;
+  margin-right: 35px;
+}
+#salary-card-advantages .tabcontent {
+  display: none;
+}
+#salary-card-advantages .tabcontent .entrepreneur-item {
+  padding: 24px;
+  height: 156px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.07);
+  border-radius: 8px;
+  margin-top: 24px;
+  margin-right: 24px;
+  justify-content: space-between;
+}
+#salary-card-advantages .tabcontent .entrepreneur-item h4 {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.87);
+}
+#salary-card-advantages .tabcontent .entrepreneur-item p {
+  margin-top: 8px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.6);
+}
+#salary-card-advantages .tabcontent .entrepreneur-item:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.07), 0 0 10px rgba(0, 0, 0, 0.03);
+}
+#salary-card-advantages #entrepreneur {
+  display: block;
+}
+
+#salary-tariff-packages {
+  display: flex;
+  justify-content: center;
+  margin-top: 96px;
+  padding: 24px;
+}
+#salary-tariff-packages h3 {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0.25px;
+}
+#salary-tariff-packages p {
+  margin-top: 28px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+#salary-tariff-packages .tariff-packages-items {
+  justify-content: space-between;
+  margin-top: 44px;
+}
+#salary-tariff-packages .tariff-packages-items .tariff-packages-item {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.07);
+  border-radius: 8px;
+}
+#salary-tariff-packages .tariff-packages-items .tariff-packages-item .tariff-pack-item-head img {
+  margin-left: 130px;
+  display: inline;
+}
+#salary-tariff-packages .tariff-packages-items .tariff-packages-item .tariff-pack-item-head h4 {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.87);
+}
+#salary-tariff-packages .tariff-packages-items .tariff-packages-item .tariff-pack-item-head p {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+}
+#salary-tariff-packages .tariff-packages-items .tariff-packages-item .packages-item-salary {
+  margin-top: 24px;
+  padding: 0 24px;
+  justify-content: space-between;
+  align-items: start;
+}
+#salary-tariff-packages .tariff-packages-items .tariff-packages-item .packages-item-salary h5 {
+  margin: auto 0;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #343836;
+}
+#salary-tariff-packages .tariff-packages-items .tariff-packages-item .packages-item-salary p {
+  margin-top: 0;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  color: #099A71;
+}
+
+#online-slide {
+  background: #F1F9F7;
+  padding: 0 0 52px 12px;
+  display: flex;
+  justify-content: center;
+}
+#online-slide .container {
+  padding: 104px 0 52px 12px;
+  background-position: right -40px bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../image/one-clock.png);
+}
+#online-slide .container h3 {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  color: rgba(0, 0, 0, 0.87);
+}
+#online-slide p {
+  margin-top: 32px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: rgba(0, 0, 0, 0.6);
+}
+#online-slide ul {
+  margin-top: 45px;
+}
+#online-slide ul li {
+  margin-top: 24px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.87);
+}
+#online-slide button {
+  border: none;
+  cursor: pointer;
+  margin-top: 72px;
+  padding: 16px 33.08px 16px 33.92px;
+  background: #058D66;
+  border-radius: 6px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #FFFFFF;
+}
+
+#online-advantages {
+  display: flex;
+  justify-content: center;
+  margin-top: 56px;
+}
+#online-advantages h3 {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0.25px;
+  color: rgba(0, 0, 0, 0.87);
+}
+#online-advantages ul {
+  margin-top: 48px;
+  justify-content: space-between;
+}
+#online-advantages ul li h4 {
+  margin-top: 24px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.87);
+}
+#online-advantages ul li p {
+  margin-top: 8px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#calculator {
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+  padding-top: 56px;
+  padding-bottom: 64px;
+  background: #FFFFFF;
+  box-shadow: 2px 5px 7px rgba(0, 0, 0, 0.07);
+}
+#calculator h3 {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0.25px;
+  color: rgba(0, 0, 0, 0.87);
+}
+#calculator .range-slider {
+  margin-top: 40px;
+  width: 466px;
+  height: 104.25px;
+}
+#calculator .range-slider .range-slider-text {
+  width: 466px;
+  background: #FFFFFF;
+  border: 1px solid #D6D7D6;
+  border-radius: 6px;
+}
+#calculator .range-slider .range-slider-text p {
+  margin: 10px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: rgba(0, 0, 0, 0.6);
+}
+#calculator .range-slider .range-slider-text .cal-number {
+  display: flex;
+  justify-content: space-between;
+  width: 428px;
+}
+#calculator .range-slider .range-slider-text .cal-number label {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 17px;
+  color: #000000;
+  margin-top: 0;
+}
+#calculator .range-slider .range-slider-text .cal-number h6 {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  color: rgba(0, 0, 0, 0.87);
+}
+#calculator .range-slider .range-slider__input {
+  position: relative;
+  left: 10px;
+  top: -15px;
+  overflow: hidden;
+  background: transparent;
+  -webkit-appearance: none;
+  height: 26px;
+  z-index: 1;
+  width: calc(100% - 36px);
+  outline: none;
+}
+#calculator .range-slider-calcu {
+  margin-top: 40px;
+}
+#calculator .range-slider-calcu h5 {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: rgba(0, 0, 0, 0.6);
+}
+#calculator .range-slider-calcu p {
+  margin-top: 6px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0.25px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+#customer-sec {
+  margin-top: 64px;
+  display: flex;
+  justify-content: center;
+}
+#customer-sec .row {
+  justify-content: space-between;
+}
+#customer-sec .customer-about h3 {
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0.25px;
+  color: rgba(0, 0, 0, 0.87);
+}
+#customer-sec .customer-about p {
+  margin-top: 48px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+footer {
+  background-color: white;
+}
+footer ul {
+  list-style: none;
+}
+
+#footer-contacts {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  background-color: white;
+  padding-top: 50px;
+}
+#footer-contacts .logo-opacity {
+  display: none;
+}
+#footer-contacts .row {
+  justify-content: space-between;
+}
+#footer-contacts .footer-contacts-item .footer-call {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+}
+#footer-contacts .footer-label {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#padding-1 {
+  padding-left: 100px;
+}
+
+#padding-2 {
+  padding-right: 25px;
+  padding-left: 30px;
+}
+
+.footer-icons-responsive {
+  display: none;
+}
+
+#footer-navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+#footer-navigation .footer-icons a {
+  margin-right: 10px;
+}
+#footer-navigation .row {
+  justify-content: space-between;
+}
+#footer-navigation ul li {
+  padding: 10px 16px;
+}
+#footer-navigation ul li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+#footer-navigation ul li a:hover {
+  color: black;
+}
+
+#footer-copyright .copyright-content {
+  display: flex;
+  justify-content: space-between;
+}
+#footer-copyright .copyright-content p {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  color: rgba(0, 0, 0, 0.5);
+}/*# sourceMappingURL=style.css.map */

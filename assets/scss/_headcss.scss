@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+body{
+    background: #FAFAFA;
+}
+.container{
+    width: 60%;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.con-4{
+    width: 31%;
+}
+.con-2{
+    width: 47.8%;
+}
+.margin-t{
+    margin-top: 40px;
+}
+.margin-t24{
+    margin-top: 24px;
+}

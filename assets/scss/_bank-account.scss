@@ -1,0 +1,44 @@
+#bank-account{
+    display: flex;
+    justify-content: center;
+    background-image: url(../../assets/image/accounts.jpg);
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #FFEBF0;
+    padding: 108px 0 52px;
+    h3{
+        width: 447.58px;
+        font-family: 'Gothic A1';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 56px;
+        color: rgba(0, 0, 0, 0.87);
+    }
+    p{
+        margin-top: 32px;
+        font-family: 'Gothic A1';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+    button{
+        margin-top: 45px;
+        padding: 12px 30.2656px 12px 30.7344px;
+        background: #058D66;
+        border-radius: 6px;
+        font-family: 'Gothic A1';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+        color: #FFFFFF;
+        border: none;
+        cursor: pointer;
+    }
+}
